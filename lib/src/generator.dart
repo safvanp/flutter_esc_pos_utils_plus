@@ -28,6 +28,8 @@ class Generator {
       return (font == null || font == PosFontType.fontA) ? 32 : 42;
     } else if (_paperSize == PaperSize.mm72) {
       return (font == null || font == PosFontType.fontA) ? 42 : 56;
+    } else if (_paperSize == PaperSize.mm112) {
+      return (font == null || font == PosFontType.fontA) ? 64 : 80;
     } else {
       return (font == null || font == PosFontType.fontA) ? 48 : 64;
     }
@@ -590,6 +592,8 @@ class Generator {
         size = 375 ~/ 2;
       } else if (_paperSize == PaperSize.mm72) {
         size = 503 ~/ 2;
+      } else if (_paperSize == PaperSize.mm112) {
+        size = 744 ~/ 2;
       }
 
       image =
